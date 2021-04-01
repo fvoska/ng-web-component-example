@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <script src="widget.js"></script>
+    <link rel="stylesheet" href="widget.css">
+  </head>
+
+  <body>
+    <my-widget counter="100"></my-widget>
+
+    <script>
+      const myWidget = document.querySelector('my-widget');
+      myWidget.addEventListener('counterChange', (counterChangeEvent) => {
+        alert(`Counter value changed to: ${counterChangeEvent.detail}`);
+      });
+    </script>
+  </body>
+</html>
